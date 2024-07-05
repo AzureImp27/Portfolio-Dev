@@ -1,0 +1,28 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Hace 6 meses...",
+    title: "Primer Proyecto Personal",
+    description:
+      "Decidí crear mi primera página web durante las vacaciones. Después de semanas de aprender por mi cuenta y seguir tutoriales en línea, desarrolle una pequeña página web parecida a Spotify con algunas mejoras, pero que quedó un poco incompleta. Aunque enfrente desafíos técnicos y tuve que aprender a manejar errores de código, el resultado final fue un éxito. Esta experiencia me enseñó la importancia de la perseverancia y la resolución de problemas en el desarrollo web...",
+    link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "Hace 3 meses...",
+    title: "Competencia de Programación y desarrollo de página web en equipo",
+    description:
+      "Participé en una competencia de programación. A pesar de ser uno de los más jóvenes en el evento, me logré destacar por mi habilidad para escribir código rápidamente. Durante la competencia, trabajé en equipo con otros estudiantes para diseñar y desarrollar una aplicación web para gestionar las tareas escolares. Aunque no ganamos el primer lugar, para mi fue de gran valor la experiencia por la oportunidad de aprender nuevas técnicas de programación y mejorar mis habilidades de trabajo en equipo. Esta experiencia fortaleció mi determinación de seguir una carrera en informática y programación..",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
