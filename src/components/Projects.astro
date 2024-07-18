@@ -4,6 +4,7 @@ import AstroJS from "./icons/Astro.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import LinkButton from "./LinkButton.astro"
 import REACT from "./icons/React.astro"
+import JS from "./icons/JS.astro"
 
 const TAGS = {
   ASTRO: {
@@ -20,6 +21,11 @@ const TAGS = {
     name: "ReactJS",
     class: "bg-[#008080] text-white justify-center items-center",
     icon: REACT,
+  },
+  JS: {
+    name: "JavaScript",
+    class: "bg-[#e0e000] text-black justify-center items-center px-5",
+    icon: JS,
   }
 }
 
@@ -38,6 +44,13 @@ const PROJECTS = [
     image: "/projects/space-x.png",
     tags: [TAGS.ASTRO, TAGS.TAILWIND, TAGS.REACT],
   },
+  {
+    title: "Arkanoid Game",
+    description: "Juego mítico y clásico Arkanoid desarrollado con VanillaJS, HTML y CSS. Ladrillos de colores, rebote de pelota y paleta de rebote son algunas de sus características",
+    github: "https://github.com/AzureImp27/arkanoid-game.git",
+    image: "/projects/Arkanoid-Game.png",
+    tags: [TAGS.JS]
+  }
 ]
 ---
 
